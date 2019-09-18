@@ -1,0 +1,128 @@
+.App {
+  width: 400px;
+  max-height: 60vh;
+  margin: 100px auto;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.App h1 {
+  color: rgb(255, 115, 0);
+  font-size: 3rem;
+}
+* {
+  box-sizing: border-box;
+}
+
+.cta {
+  border: none;
+  background: rgb(231, 12, 96);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #ffffff;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+  outline: none;
+  margin: 30px 0;
+  margin-right: 10px;
+  font-size: 20px;
+  width: 80px;
+}
+
+.cta:hover {
+  background-color: rgb(185, 8, 76);
+}
+
+.clock {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.message h1 {
+  opacity: 0;
+  display: none;
+  font-size: 2rem;
+}
+
+.greeting-show {
+  display: block !important;
+  animation: showme 500ms ease forwards;
+}
+
+@keyframes showme {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+svg {
+  stroke-width: 10;
+  stroke: #6fdb6f;
+  position: absolute;
+  stroke-dasharray: 440;
+  transition: all 300ms ease;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  stroke-dashoffset: 440;
+}
+.hurray {
+  animation: hurray 1s ease forwards;
+}
+
+@keyframes hurray {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-30px) scale(1.3);
+  }
+  40% {
+    transform: translateY(30px) scale(0.5);
+  }
+  60% {
+    transform: translateY(-30px) scale(1.3);
+  }
+  80% {
+    transform: translateY(30px) scale(0.5);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: 300ms ease;
+  display: block;
+  background-color: #ccc;
+  margin: 10px auto;
+}
+
+@media (max-width: 500px) {
+  .App {
+    width: 300px;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}
