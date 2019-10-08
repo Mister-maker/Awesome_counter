@@ -1,6 +1,6 @@
 # Javascript Counter
 
-A Emall Javascript Counter With Some Cool Effects Build With Reactjs. Try the [live demo]().
+A Emall Javascript Counter With Some Cool Effects Build With Reactjs. Try the [live demo](https://awesome-counter.netlify.com).
 
 ## Stack
 
