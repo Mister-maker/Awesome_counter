@@ -7,7 +7,7 @@ A Emall Javascript Counter With Some Cool Effects Build With Reactjs. Try the [l
 - React (Create-React-App)
 
 ```shell
-$ git clone https://github.com/Mister-maker/gradient-generator.git
+$ git clone https://github.com/Mister-maker/Awesome_counter.git
 $ cd soundcloud-redux
 $ npm install
 $ npm start
